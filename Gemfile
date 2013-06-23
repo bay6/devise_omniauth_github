@@ -29,6 +29,13 @@ group :development, :test do
   gem 'jasmine'
   gem 'factory_girl_rails'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+
+  gem 'guard-rspec'
+  # Use for notify on Mac OS X, you must install growl and growlnotify before.
+  gem 'growl'
+
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :development do
@@ -40,6 +47,10 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'capistrano'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 # To use ActiveModel has_secure_password
