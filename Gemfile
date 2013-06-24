@@ -27,9 +27,8 @@ group :development, :test do
   gem 'sqlite3'
 
   gem 'rspec-rails'
-  gem 'jasmine'
   gem 'factory_girl_rails'
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
+  gem 'annotate'
 
   gem 'guard-rspec'
   # Use for notify on Mac OS X, you must install growl and growlnotify before.
@@ -37,17 +36,6 @@ group :development, :test do
 
   gem 'guard-spork'
   gem 'spork'
-end
-
-group :development do
-  gem 'awesome_print'
-  gem 'thin'
-  gem 'pry-debugger'
-  gem 'quiet_assets'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
-  gem 'capistrano'
 end
 
 group :test do
