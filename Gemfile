@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem "slim-rails"
+gem 'devise'
 gem 'omniauth-github'
 
 

@@ -34,10 +34,21 @@
       <section class="top-bar-section">
         <ul class="right">
           <li class="divider"></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="<%= user_omniauth_authorize_path(:github) %>">Login</a></li>
         </ul>
       </section>
     </nav>
+
+    <div>
+      <p data-alert class="alert-box success">
+        <%= notice %>
+        <a href="#" class="close">&times;</a>
+      </p>
+      <p data-alert class="alert-box alert">
+        <%= alert %>
+        <a href="#" class="close">&times;</a>
+      </p>
+    <div>
 
     <%= yield %>
 
