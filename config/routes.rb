@@ -1,7 +1,7 @@
 Preunion::Application.routes.draw do
-  devise_for :users
-
   root to: 'static_pages#home'
+  
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
